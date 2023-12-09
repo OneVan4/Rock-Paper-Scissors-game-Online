@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="jura_biege_text_style" parent="@android:style/TextAppearance">
+        <item name="fontFamily">@font/jura_font</item> <!-- Устанавливаем наш созданный шрифт семейства Jura -->
+        <item name="android:textColor">#8B8378</item> <!-- Здесь указывается цвет текста, например, бежевый (#8B8378) -->
+    </style>
+</resources>

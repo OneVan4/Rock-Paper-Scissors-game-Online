@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "142999225793",
+    "project_id": "rpsonline-c8934",
+    "storage_bucket": "rpsonline-c8934.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142999225793:android:6aa3b30527d0dd8b09db40",
+        "android_client_info": {
+          "package_name": "com.example.rps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142999225793-q5kua273cm047b9d9gvvfuufg3bi5lu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTgHy_L-AC6JnrYU4M-PQ6OIzJk5MyqKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142999225793-q5kua273cm047b9d9gvvfuufg3bi5lu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

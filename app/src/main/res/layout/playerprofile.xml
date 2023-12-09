@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_view_shape">
+
+            <View
+                android:id="@+id/view23"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/skyblue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/profileBioTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="о себе:"
+                            android:textAppearance="@style/jura_biege_text_style"
+                            android:textColor="@color/biege"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/profileNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/jura_bold"
+                android:gravity="center"
+                android:text="Имя"
+                android:textColor="@color/biege"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePicIV"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/profileratingTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="рейтинг"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/biege"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/profilePicIV"
+                app:layout_constraintTop_toTopOf="@+id/profilePicIV" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/skyblue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profilePicIV" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/skyblue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileNameTV" />
+
+            <TextView
+                android:id="@+id/profileGamesPlayed_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Сыграно игр"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/biege"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/profileratingTV"
+                app:layout_constraintTop_toBottomOf="@+id/profileratingTV" />
+
+            <TextView
+                android:id="@+id/profileWinPercent_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Процент побед"
+                android:textColor="@color/biege"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/profileGamesPlayed_TV"
+                app:layout_constraintTop_toBottomOf="@+id/profileGamesPlayed_TV" />
+
+            <ImageButton
+                android:id="@+id/dislikeIB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/socialRatingTV"
+                app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+            <ImageButton
+                android:id="@+id/likeIB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/socialRatingTV"
+                app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+            <TextView
+                android:id="@+id/socialRatingTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/jura_bold"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/biege"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/view23"
+                app:layout_constraintStart_toStartOf="@+id/view23"
+                app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd2"
+    android:scaleType="centerInside"
+    tools:context=".game_Settings">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/dialogColor"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/jura_regular"
+                android:gravity="center"
+                android:text="Игровые настройки"
+                android:textColor="@color/biege"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/view21"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view22"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/skyblue"
+                app:layout_constraintBottom_toTopOf="@+id/start_Round_Button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/isPrivate" />
+
+            <ImageView
+                android:id="@+id/duckSettingsIV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ultsign_Switcher"
+                app:layout_constraintStart_toEndOf="@+id/ultsign_Switcher"
+                app:layout_constraintTop_toTopOf="@+id/ultsign_Switcher"
+                app:srcCompat="@drawable/duck" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/jura_regular"
+                android:gravity="center"
+                android:text="Время\n на раунд"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/biege"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/jura_regular"
+                android:text="Раунды"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/biege"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/ultsign_Switcher"
+                app:layout_constraintTop_toBottomOf="@+id/ultsign_Switcher" />
+
+            <TextView
+                android:id="@+id/rounds_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/jura_semibold"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="@color/biege"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/round_seekBar"
+                app:layout_constraintStart_toEndOf="@+id/round_seekBar"
+                app:layout_constraintTop_toTopOf="@+id/round_seekBar" />
+
+            <View
+                android:id="@+id/view21"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/skyblue"
+                app:layout_constraintBottom_toTopOf="@+id/ultsign_Switcher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Switch
+                android:id="@+id/ultsign_Switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="260dp"
+                android:fontFamily="@font/jura_regular"
+                android:text="Уточка"
+                android:textColor="@color/biege"
+                android:textSize="18dp"
+                android:thumbTint="@color/skyblue"
+                android:trackTint="@color/biege"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/isPrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:buttonTint="@color/biege"
+                android:fontFamily="@font/jura_regular"
+
+                android:text="Приватная"
+                android:textColor="@color/biege"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/lobbyName"
+                app:layout_constraintTop_toBottomOf="@+id/lobbyName" />
+
+            <SeekBar
+                android:id="@+id/round_seekBar"
+                style="@style/Widget.AppCompat.SeekBar"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:background="@drawable/card_view_shape"
+                android:max="33"
+                android:min="1"
+                android:progress="3"
+                android:progressTint="@color/biege"
+                android:stepSize="2"
+                android:thumbTint="@color/skyblue"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="@+id/time_seekBar"
+                app:layout_constraintStart_toStartOf="@+id/time_seekBar"
+                app:layout_constraintTop_toTopOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/alt_et_shape"
+                android:ems="10"
+                android:fontFamily="@font/jura_regular"
+                android:gravity="center"
+                android:hint="Введите пароль !"
+                android:inputType="textPersonName"
+                android:maxLength="13"
+                android:textColor="@color/dialogColor"
+                android:textColorHint="@color/dialogColor"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/isPrivate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/isPrivate"
+                app:layout_constraintTop_toTopOf="@+id/isPrivate" />
+
+            <SeekBar
+                android:id="@+id/time_seekBar"
+                style="@style/Widget.AppCompat.SeekBar"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/card_view_shape"
+                android:max="30"
+                android:min="4"
+                android:progress="3"
+                android:progressTint="@color/biege"
+                android:stepSize="1"
+                android:thumbTint="@color/skyblue"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/lobbyNameEditText"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/alt_et_shape"
+                android:ems="10"
+                android:fontFamily="@font/jura_regular"
+                android:gravity="center"
+                android:hint="Введите название !"
+                android:inputType="textPersonName"
+                android:maxLength="24"
+                android:textColor="@color/dialogColor"
+                android:textColorHint="@color/dialogColor"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lobbyName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/isPrivate"
+                app:layout_constraintTop_toTopOf="@+id/lobbyName" />
+
+            <TextView
+                android:id="@+id/time_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/jura_regular"
+                android:gravity="center"
+                android:text="15"
+                android:textColor="@color/biege"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/time_seekBar"
+                app:layout_constraintEnd_toEndOf="@+id/rounds_Textview"
+                app:layout_constraintStart_toEndOf="@+id/time_seekBar"
+                app:layout_constraintTop_toTopOf="@+id/time_seekBar" />
+
+            <TextView
+                android:id="@+id/lobbyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/jura_regular"
+                android:gravity="center"
+                android:text="Название\n комнаты"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/biege"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <ImageButton
+                android:id="@+id/start_Round_Button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/authors_but"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/duckyIV713"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

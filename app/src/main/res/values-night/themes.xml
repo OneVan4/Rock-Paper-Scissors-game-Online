@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RPS" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dialogColor</item>
+        <item name="colorPrimaryVariant">@color/dialogColor</item>
+        <item name="colorOnPrimary">@color/dialogColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dialogColor</item>
+        <item name="colorSecondaryVariant">@color/dialogColor</item>
+        <item name="colorOnSecondary">@color/dialogColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/dialogColor</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

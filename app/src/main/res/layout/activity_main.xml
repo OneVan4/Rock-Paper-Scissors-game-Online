@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd2"
+    android:scaleType="centerInside"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/start_Button"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/startgamebut"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoIV" />
+
+    <ImageButton
+        android:id="@+id/how2Play_Button"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/authors_but"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/authors_Button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/authors_Button"
+        app:layout_constraintTop_toBottomOf="@+id/authors_Button" />
+
+    <ImageButton
+        android:id="@+id/rating_Button"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rating_button"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/start_Button"
+        app:layout_constraintStart_toStartOf="@+id/start_Button"
+        app:layout_constraintTop_toBottomOf="@+id/start_Button" />
+
+    <ImageButton
+        android:id="@+id/authors_Button"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rules_but"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/rating_Button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rating_Button"
+        app:layout_constraintTop_toBottomOf="@+id/rating_Button" />
+
+    <ImageButton
+        android:id="@+id/exit_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/exit"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/profile_Button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/profile"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="338dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Button"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/sound_ImageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/sound"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_Button"
+        app:layout_constraintEnd_toStartOf="@+id/profile_Button"
+        app:layout_constraintTop_toTopOf="@+id/profile_Button" />
+
+    <ImageButton
+        android:id="@+id/chatIB"
+        android:background="@drawable/chat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sound_ImageButton"
+        app:layout_constraintEnd_toStartOf="@+id/sound_ImageButton"
+        app:layout_constraintTop_toTopOf="@+id/sound_ImageButton"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

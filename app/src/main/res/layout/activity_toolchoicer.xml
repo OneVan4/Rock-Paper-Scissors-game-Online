@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".toolchoicer">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/dialogColor"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/roundTV">
+
+                <ImageButton
+                    android:id="@+id/scissors_Button"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginHorizontal="6dp"
+                    android:background="@drawable/scissors"
+                    android:scaleType="centerCrop"
+                    android:text="ножницы" />
+
+                <ImageButton
+                    android:id="@+id/stone_Button"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginHorizontal="6dp"
+                    android:background="@drawable/stone"
+                    android:scaleType="centerCrop"
+                    android:text="Камень" />
+
+                <ImageButton
+                    android:id="@+id/paper_Button"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginHorizontal="6dp"
+                    android:background="@drawable/paper"
+                    android:scaleType="centerCrop"
+                    android:text="бумага" />
+
+                <ImageButton
+                    android:id="@+id/duck_Button"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginHorizontal="6dp"
+                    android:background="@drawable/duck"
+                    android:scaleType="centerCrop"
+                    android:text="даки" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/roundTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/biege"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/choiceTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/biege"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:background="@drawable/backgrnd2"
+    android:scaleType="centerInside"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:cardBackgroundColor="@color/dialogColor"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chooseProfImageTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/jura_semibold"
+                android:gravity="center"
+                android:text="Выберите картинку профиля "
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/biege" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/guest" />
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginVertical="8dp"
+                android:background="@color/skyblue" />
+
+            <TextView
+                android:id="@+id/enterNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+
+                android:layout_marginTop="85dp"
+                android:fontFamily="@font/jura_semibold"
+                android:text="Ваше имя"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/biege" />
+
+            <EditText
+                android:id="@+id/nameRigisterET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/alt_et_shape"
+                android:ems="10"
+                android:fontFamily="@font/jura_semibold"
+                android:gravity="center"
+                android:hint="-"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/dialogColor"
+                android:textColorHint="@color/dialogColor"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginVertical="8dp"
+                android:background="@color/skyblue" />
+
+            <TextView
+                android:id="@+id/bioTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/jura_semibold"
+                android:gravity="center"
+                android:text="Укажите ваш статус/Дополнительную информацию"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/biege" />
+
+            <EditText
+                android:id="@+id/bioET2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/alt_et_shape"
+                android:ems="10"
+                android:fontFamily="@font/jura_semibold"
+                android:gravity="center"
+                android:hint="-"
+                android:maxLength="713"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/dialogColor"
+                android:textColorHint="@color/dialogColor" />
+
+            <View
+                android:id="@+id/view17"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginVertical="8dp"
+                android:background="@color/skyblue" />
+
+            <TextView
+                android:id="@+id/ageTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/jura_semibold"
+                android:text="Ваш возраст"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/biege" />
+
+            <EditText
+                android:id="@+id/ageET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/alt_et_shape"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="-"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textAppearance="@style/jura_biege_text_style"
+                android:textColor="@color/dialogColor"
+                android:textColorHint="@color/dialogColor"
+                android:textSize="17sp" />
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginVertical="8dp"
+                android:background="@color/skyblue" />
+
+            <ImageButton
+                android:id="@+id/registerButton"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/save_button"
+                android:scaleType="centerCrop"
+                android:text="Зарегестрироваться" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

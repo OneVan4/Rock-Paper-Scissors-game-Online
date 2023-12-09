@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd2"
+    android:scaleType="centerInside"
+    tools:context=".inLobby">
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/send"
+        android:elevation="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/worldChatRV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card_view_shape"
+        app:layout_constraintBottom_toTopOf="@+id/composeMesET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playersInRoomRV"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/deleteLobbyButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/deleteLobbyButton"
+        android:layout_width="125dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/delete_room_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playersInRoomRV" />
+
+    <ImageButton
+        android:id="@+id/startLobbyGameButton"
+        android:layout_width="125dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:background="@drawable/startgamebut"
+        app:layout_constraintEnd_toEndOf="@+id/deleteLobbyButton"
+        app:layout_constraintStart_toStartOf="@+id/deleteLobbyButton"
+        app:layout_constraintTop_toBottomOf="@+id/deleteLobbyButton" />
+
+    <EditText
+        android:id="@+id/composeMesET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_view_shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Отправить сообщение..."
+        android:inputType="textPersonName"
+        android:maxLength="228"
+        android:padding="8dp"
+        android:textAppearance="@style/jura_biege_text_style"
+        android:textColor="@color/biege"
+        android:textColorHint="@color/biege"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Чат :"
+        android:fontFamily="@font/jura_bold"
+        android:textColor="@color/biege"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/worldChatRV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playersInRoomRV" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onlineGameActivity"
+    android:background="@drawable/backgrnd2"
+    android:scaleType="centerInside"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/opEmojiCV"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/smilebkgr"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/opCircularIV"
+        app:layout_constraintTop_toBottomOf="@+id/opCircularIV">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/smilebkgr"
+            android:rotation="90">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:rotation="270"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/opEmojiImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/playerEmojiIV"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/smilebkgr"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/playerCircularIV"
+        app:layout_constraintStart_toEndOf="@+id/playerCircularIV">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/smilebkgr">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/myEmojiImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/playerWinIV"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/playerTool_IVon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerCircularIV" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/playerCircularIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/playerTool_IVon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playerTool_IVon"
+        app:srcCompat="@drawable/clapclap" />
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@color/skyblue"
+        app:layout_constraintBottom_toTopOf="@+id/timerInfo_TV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerTool_IVon" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/opCircularIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/opponentTool_IV"
+        app:layout_constraintEnd_toStartOf="@+id/opponentTool_IV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/clapclap" />
+
+    <ImageView
+        android:id="@+id/opponentTool_IV"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastTools"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/score_Textview2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Вот туть будем играць!"
+        android:textColor="@color/biege"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lastTools"
+        app:layout_constraintEnd_toStartOf="@+id/lastTools"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lastTools" />
+
+    <GridView
+        android:id="@+id/lastTools"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/card_view_shape"
+        android:gravity="center"
+        android:numColumns="3"
+        app:layout_constraintBottom_toTopOf="@+id/botTool_IV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <ImageView
+        android:id="@+id/playerTool_IVon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/timerInfo_TV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/opName_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/biege"
+        app:layout_constraintEnd_toEndOf="@+id/opponentTool_IV"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="@+id/opponentTool_IV"
+        app:layout_constraintTop_toBottomOf="@+id/opponentTool_IV" />
+
+    <TextView
+        android:id="@+id/playerName_TVon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/biege"
+        app:layout_constraintBottom_toTopOf="@+id/playerTool_IVon"
+        app:layout_constraintEnd_toEndOf="@+id/playerTool_IVon"
+        app:layout_constraintStart_toStartOf="@+id/playerTool_IVon" />
+
+    <TextView
+        android:id="@+id/timerInfo_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="TextView"
+        android:textColor="@color/biege"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/emojiButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/smileicon"
+        app:layout_constraintBottom_toBottomOf="@+id/playerTool_IVon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerTool_IVon"
+        app:layout_constraintTop_toTopOf="@+id/playerTool_IVon" />
+
+    <ImageView
+        android:id="@+id/animation_IV"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/playerName_TVon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opName_TV"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@color/skyblue"
+        app:layout_constraintBottom_toTopOf="@+id/opponentTool_IV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastTools" />
+
+    <ImageView
+        android:id="@+id/opWinIV"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/opCircularIV"
+        app:layout_constraintEnd_toStartOf="@+id/opponentTool_IV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/crown" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
